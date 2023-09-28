@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e966bf049f12476999cd6d2cc0ab8171" Name="Diagram1">
+        <EntityTypeShape EntityType="PutintsevUPModel.Manufacturer" Width="1.5" PointX="0.75" PointY="3.625" />
+        <EntityTypeShape EntityType="PutintsevUPModel.Order" Width="1.5" PointX="3" PointY="11.5" />
+        <EntityTypeShape EntityType="PutintsevUPModel.OrderPickPoint" Width="1.5" PointX="0.75" PointY="19.125" />
+        <EntityTypeShape EntityType="PutintsevUPModel.OrderProduct" Width="1.5" PointX="5.25" PointY="3.25" />
+        <EntityTypeShape EntityType="PutintsevUPModel.OrderStatus" Width="1.5" PointX="0.75" PointY="9.25" />
+        <EntityTypeShape EntityType="PutintsevUPModel.Product" Width="1.5" PointX="3" PointY="2.375" />
+        <EntityTypeShape EntityType="PutintsevUPModel.ProductCategory" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="PutintsevUPModel.Provider" Width="1.5" PointX="0.75" PointY="6.375" />
+        <EntityTypeShape EntityType="PutintsevUPModel.Role" Width="1.5" PointX="1.5" PointY="16.125" />
+        <EntityTypeShape EntityType="PutintsevUPModel.sysdiagrams" Width="1.5" PointX="2.75" PointY="7.125" />
+        <EntityTypeShape EntityType="PutintsevUPModel.User" Width="1.5" PointX="0.75" PointY="11.625" />
+        <AssociationConnector Association="PutintsevUPModel.FK_Product_Manufacturer" />
+        <AssociationConnector Association="PutintsevUPModel.FK__OrderProd__Order__2D27B809" />
+        <AssociationConnector Association="PutintsevUPModel.FK_Order_OrderPickPoint" />
+        <AssociationConnector Association="PutintsevUPModel.FK_Order_OrderStatus" />
+        <AssociationConnector Association="PutintsevUPModel.FK_Order_User" />
+        <AssociationConnector Association="PutintsevUPModel.FK__OrderProd__Produ__2E1BDC42" />
+        <AssociationConnector Association="PutintsevUPModel.FK_Product_ProductCategory" />
+        <AssociationConnector Association="PutintsevUPModel.FK_Product_Provider" />
+        <AssociationConnector Association="PutintsevUPModel.FK__User__UserRole__267ABA7A" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

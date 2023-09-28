@@ -1,0 +1,42 @@
+﻿<Page x:Class="DesktopPutintsev.Pages.AuthorizationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DesktopPutintsev.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Авторизация">
+
+    <Grid>
+        <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Label Content="Авторизация" FontSize="26" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Comic Sans MS"></Label>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Введите Логин:" Width="130" TextAlignment="Left" VerticalAlignment="Center" FontSize="16" Margin="8" FontFamily="Comic Sans MS"></TextBlock>
+                <TextBox x:Name="TBoxLogin" Width="130" Margin="6"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Введите Пароль:" Width="130" TextAlignment="Left" VerticalAlignment="Center" FontSize="16" Margin="8" FontFamily="Comic Sans MS"></TextBlock>
+                <PasswordBox x:Name="TBoxPassword" Width="130" Margin="5"></PasswordBox>
+            </StackPanel>
+            <Image x:Name="ImageCapcha" Width="200" Height="150" MouseLeftButtonDown="ImageCapcha_MouseLeftButtonDown" Margin="20" Visibility="Collapsed"></Image>
+            <TextBox Visibility="Collapsed" Width="270" x:Name="TBxCapcha" HorizontalAlignment="Center" Margin="5" Height="30" FontFamily="Comic Sans MS"></TextBox>
+            <Button x:Name="BTNLogin" Click="BTNLogin_Click_1" Width="120" Height="40" Content="Войти" FontFamily="Comic Sans MS" Background="#FF498C51">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"></Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button x:Name="BTNLoginGues" Click="BTNLoginGues_Click" Width="100" Height="30" Content="Я гость" FontFamily="Comic Sans MS" Background="#FF498C51" Margin="5">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"></Setter>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Page>
